@@ -5,7 +5,9 @@
   "workspaces": {
     "packages": [
       "packages/hardhat",
-      "packages/nextjs"
+      "packages/nextjs",
+      "packages/discord",
+      "packages/ponder"
     ]
   },
   "scripts": {
@@ -33,7 +35,14 @@
     "postinstall": "husky install",
     "precommit": "lint-staged",
     "vercel": "yarn workspace @se-2/nextjs vercel",
-    "vercel:yolo": "yarn workspace @se-2/nextjs vercel:yolo"
+    "vercel:yolo": "yarn workspace @se-2/nextjs vercel:yolo",
+    "ponder:dev": "yarn workspace @se-2/ponder dev",
+    "ponder:start": "yarn workspace @se-2/ponder start",
+    "ponder:codegen": "yarn workspace @se-2/ponder codegen",
+    "ponder:serve": "yarn workspace @se-2/ponder serve",
+    "ponder:lint": "yarn workspace @se-2/ponder lint",
+    "ponder:typecheck": "yarn workspace @se-2/ponder typecheck",
+    "discord:start": "yarn workspace @se-2/discord start"
   },
   "packageManager": "yarn@3.2.3",
   "devDependencies": {
@@ -42,5 +51,10 @@
   },
   "engines": {
     "node": ">=18.17.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.2",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.2"
   }
 }

@@ -1,0 +1,11 @@
+{
+  "name": "@se-2/discord",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.2",
+    "dotenv": "^16.4.5",
+    "ethers": "5.7.0"
+  }
+}
